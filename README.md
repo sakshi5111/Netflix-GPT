@@ -23,6 +23,8 @@
 - Fetch data for Trailer video
 - Update store with Trailer video
 - Embedded the youtube video and make it autoplay and mute
+- Build secondary container with MovieList and MovieCard
+- Custom hooks for different categories of moviesList
 
 # Features
 

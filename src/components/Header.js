@@ -54,7 +54,7 @@ const Header = () => {
           <p
             className="text-white font-bold cursor-pointer pl-3 pt-2 hover:text-red-500"
             onClick={handleSignOut}>
-            <i className="fa-solid fa-arrow-right-from-bracket"></i>
+            <i className="fa-solid fa-caret-down"></i>
           </p>
         </div>
       )}
