@@ -25,6 +25,8 @@
 - Embedded the youtube video and make it autoplay and mute
 - Build secondary container with MovieList and MovieCard
 - Custom hooks for different categories of moviesList
+- GPT Search Page
+- GPT Search Bar
 
 # Features
 

@@ -5,6 +5,7 @@ import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
+import { toggleGptSearchView } from "../utils/gptSlice";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -24,6 +25,8 @@ const Header = () => {
       });
   };
 
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -40,21 +43,34 @@ const Header = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const handleGptSearchClick = () => {
+    dispatch(toggleGptSearchView());
+  };
+
   return (
     <div className="w-screen absolute px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
       <img className="w-44" src={logo} alt="logo" />
 
       {user && (
-        <div className="pt-2 flex">
+        <div className="p-2 flex cursor-pointer">
+          <button
+            className="px-2 mx-2 mt-0 mb-4 text-white"
+            onClick={handleGptSearchClick}>
+            {showGptSearch ? (
+              <i className="fa-solid fa-house"></i>
+            ) : (
+              <i className="fa-solid fa-magnifying-glass text-xl"></i>
+            )}
+          </button>
           <img
             className="w-10 h-10 rounded-md"
             alt="user-icon"
             src={user_avatar}
           />
           <p
-            className="text-white font-bold cursor-pointer pl-3 pt-2 hover:text-red-500"
+            className="text-white font-bold pl-3 pt-2 hover:text-red-500"
             onClick={handleSignOut}>
-            <i className="fa-solid fa-caret-down"></i>
+            <i className="fa-solid fa-power-off"></i>
           </p>
         </div>
       )}
