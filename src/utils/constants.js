@@ -17,3 +17,7 @@ export const API_Options = {
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+// export const OPENAI_KEY = "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";
+
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;

@@ -2,6 +2,7 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = ({ title, movies }) => {
+  console.log(movies);
   return (
     <div className="px-8 py-8">
       <h1 className="text-3xl py-2 text-white">{title}</h1>
@@ -12,6 +13,7 @@ const MovieList = ({ title, movies }) => {
               key={movie.id}
               posterPath={movie.poster_path}
               movieTitle={movie.title}
+              movie={movie}
             />
           ))}
         </div>
