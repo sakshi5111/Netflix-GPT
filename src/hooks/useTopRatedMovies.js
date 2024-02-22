@@ -7,6 +7,8 @@ const useTopRatedMovies = () => {
   //below code is fetching the data and update the store with this movie data from TMDB API
   const dispatch = useDispatch();
 
+  // const topRatedMovies = useSelector((store) => store.movies.topRatedMovies);
+
   const getTopRatedMovies = async () => {
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1",

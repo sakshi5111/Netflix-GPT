@@ -27,6 +27,9 @@
 - Custom hooks for different categories of moviesList
 - GPT Search Page
 - GPT Search Bar
+- Get Open AI key
+- fetched gptMovieSuggestion data from Tmdb API
+- make app responsive
 
 # Features
 

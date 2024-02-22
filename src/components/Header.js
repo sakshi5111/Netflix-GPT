@@ -48,13 +48,13 @@ const Header = () => {
   };
 
   return (
-    <div className="w-screen absolute px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img className="w-44" src={logo} alt="logo" />
+    <div className="w-screen absolute px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between">
+      <img className="w-44 mx-auto md:mx-0" src={logo} alt="logo" />
 
       {user && (
-        <div className="p-2 flex cursor-pointer">
+        <div className="p-2 flex justify-between cursor-pointer">
           <button
-            className="px-2 mx-2 mt-0 mb-4 text-white"
+            className="px-2 mx-2 mt-2 md:mt-0 mb-4 text-white"
             onClick={handleGptSearchClick}>
             {showGptSearch ? (
               <i className="fa-solid fa-house"></i>

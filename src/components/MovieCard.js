@@ -7,7 +7,7 @@ const MovieCard = ({ movieTitle, posterPath, movie }) => {
   if (!posterPath) return null;
   return (
     <div>
-      <div className="w-52 pr-4 cursor-pointer">
+      <div className="w-36 md:w-52 pr-4 cursor-pointer">
         <img
           className="rounded-xl hover:h-64"
           alt="Movie Card"
