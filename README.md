@@ -48,6 +48,7 @@
   - Movie Suggestions
  
 Live Link - https://netflix-gpt-v6.netlify.app/
+
 Some Snapshots
 ![Screenshot 2024-02-25 225712](https://github.com/sakshi5111/Netflix-GPT/assets/72803817/b79ea050-ca2d-481d-ac55-9b50d27fa4e5)
 ![Screenshot 2024-02-25 231443](https://github.com/sakshi5111/Netflix-GPT/assets/72803817/9b05aa96-9b1a-44a6-80cf-d464838d5d97)
