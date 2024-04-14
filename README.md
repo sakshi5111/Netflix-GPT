@@ -47,7 +47,7 @@
   - Search Bar
   - Movie Suggestions
  
-Live Link - https://netflixgpt.netlify.app
+Live Link - https://show-stream.netlify.app/
 
 Some Snapshots
 ![Screenshot 2024-02-25 225712](https://github.com/sakshi5111/Netflix-GPT/assets/72803817/b79ea050-ca2d-481d-ac55-9b50d27fa4e5)
